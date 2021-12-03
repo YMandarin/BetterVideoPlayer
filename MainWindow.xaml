@@ -25,6 +25,8 @@
         <CommandBinding Command="FastForward" Executed="command_fastForward"/>
         <CommandBinding Command="Rewind" Executed="command_rewind"/>
         <CommandBinding Command="IncreaseTreble" Executed="command_toggleFullscreen"/>
+        <CommandBinding Command="DecreaseTreble" Executed="command_toggleHover"/>
+
         <CommandBinding Command="Open" Executed="command_openFile"/>
     </Window.CommandBindings>
     <Window.InputBindings>
@@ -38,6 +40,7 @@
         <KeyBinding Key="F11" Command="IncreaseTreble"/>
         <KeyBinding Key="F" Command="IncreaseTreble"/>
         <KeyBinding Key="H" Command="DecreaseTreble"/>
+        <KeyBinding Key="O" Modifiers="Ctrl" Command="Open"/>
     </Window.InputBindings>
 
     <WindowChrome.WindowChrome>
@@ -278,7 +281,7 @@
                             Open File
                         </Button>
 
-                        <Button Cursor="Hand" Grid.Row="1" Click="button_toggleHover" Style="{StaticResource text_button}" Foreground="white">
+                        <Button Cursor="Hand" Grid.Row="1" Command="DecreaseTreble" Style="{StaticResource text_button}" Foreground="white">
                             <Grid Width="120">
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition Width="Auto"/>

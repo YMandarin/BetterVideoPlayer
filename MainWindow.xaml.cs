@@ -526,7 +526,7 @@ namespace BetterVideoPlayer
             }
         }
 
-        private void button_toggleHover(object sender, RoutedEventArgs e)
+        private void command_toggleHover(object sender, ExecutedRoutedEventArgs e)
         {
             Topmost = !Topmost;
             controlbar_menu_hoverCheckbox.Visibility = Topmost ? Visibility.Visible : Visibility.Hidden;
