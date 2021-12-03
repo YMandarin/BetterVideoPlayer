@@ -28,5 +28,5 @@ mouse mode: change if clicking in the middle of the window pauses/plays the vide
 
 ### next/previous video
 when opening a file BVP checks for next/previous videos alphabetically in the directory of the opened file </br>
-click on the right or left border for the next or previous video </br>
+click on the right or left border to open the next or previous video </br>
 hover over the arrow see the name of the next/previous video </br>
